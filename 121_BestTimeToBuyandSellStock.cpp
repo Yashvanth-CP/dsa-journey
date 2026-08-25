@@ -29,7 +29,7 @@ int main(){
     int profit1 = sol.maxProfit(prices1);
     cout << "Test 1: " << profit1 << endl;
 
-// Test 2
+    // Test 2
     vector<int> prices3 = {7, 1, 3, 5, 3, 6, 4};
     int profit3 = sol.maxProfit(prices3);
     cout << "Test 3: " << profit3 << endl;
