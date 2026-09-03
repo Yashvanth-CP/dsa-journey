@@ -93,6 +93,7 @@ int main() {
 
     cout << "Minimum distance: " << result[0] << endl;
     cout << "Maximum distance: " << result[1] << endl;
+    cout << "Done" << endl;
 
     return 0;
 }
