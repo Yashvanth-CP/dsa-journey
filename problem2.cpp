@@ -1,15 +1,27 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int factorial(int n) {
-    // BASE CASE - Stop here
-    if (n == 0 || n == 1) return 1;
-    
-    // RECURSIVE CASE - Call itself with smaller problem
-    return n * factorial(n - 1);
-}
+int main() {
 
-int main(){
-    cout << factorial(5) << endl;  // Output: 120
+    string s;
+    cin >> s;
+
+    int hash[256] = {0};
+
+    
+    for (int i = 0; i < s.size(); i++) {
+        hash[s[i]]++;
+    }
+
+   
+    int q;
+    cin >> q;
+    while (q--) {
+
+        char c;
+        cin >> c;
+        cout << hash[c] << endl;
+    }
+
     return 0;
 }
